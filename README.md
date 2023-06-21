@@ -81,7 +81,8 @@ const AD = require('recycleBin-activedirectory2').promiseWrapper;
 const config = { url: 'ldap://dc.domain.com',
                baseDN: 'dc=domain,dc=com',
                username: 'username@domain.com',
-               password: 'password' }
+               password: 'password',
+               includeDeleted: true }
 const ad = new AD(config);
 ````
 
