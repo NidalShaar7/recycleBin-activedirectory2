@@ -379,7 +379,7 @@ groups and users that match the specified filter. Any results not recognized as 
 __Arguments__
 * opts - Optional parameters to extend or override functionality. See [optional parameters](#opts). If only a string is provided, then the string is assumed to be an LDAP filter
 * callback - The callback to execute when completed. callback(err: {Object}, groups: {Array[Group]})
-
+* if includeDeleted flag is set to true in the activeDirectory2 configs instance it will fetch deleted users from recycle bin.
 __Example__
 
 ```js
