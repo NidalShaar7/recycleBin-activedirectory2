@@ -35,14 +35,14 @@ Installation
 --------------
 
 ```sh
-npm install activedirectory2
+npm install recycleBin-activedirectory2
 ```
 
 Usage
 --------------
 
 ```js
-var ActiveDirectory = require('activedirectory2');
+var ActiveDirectory = require('recycleBin-activedirectory2');
 var config = { url: 'ldap://dc.domain.com',
                baseDN: 'dc=domain,dc=com',
                username: 'username@domain.com',
@@ -76,7 +76,7 @@ A Promise wrapper is available for all methods by an alternate `require`
 statement:
 
 ```javascript
-const AD = require('activedirectory2').promiseWrapper;
+const AD = require('recycleBin-activedirectory2').promiseWrapper;
 const config = { url: 'ldap://dc.domain.com',
                baseDN: 'dc=domain,dc=com',
                username: 'username@domain.com',
@@ -387,9 +387,9 @@ var _ = require('underscore');
 var query = 'cn=*Exchange*';
 var opts = {
   includeMembership : [ 'group', 'user' ], // Optionally can use 'all'
-  includeDeleted : false
 };
 
+config.includeDeleted = true;
 var ad = new ActiveDirectory(config);
 ad.find(query, function(err, results) {
   if ((err) || (! results)) {
