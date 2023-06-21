@@ -46,7 +46,8 @@ var ActiveDirectory = require('recycleBin-activedirectory2');
 var config = { url: 'ldap://dc.domain.com',
                baseDN: 'dc=domain,dc=com',
                username: 'username@domain.com',
-               password: 'password' }
+               password: 'password',
+               includeDeleted: true }
 var ad = new ActiveDirectory(config);
 ```
 
