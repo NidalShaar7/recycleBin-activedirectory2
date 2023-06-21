@@ -1,6 +1,6 @@
 {
   "author": "George Heeres <gheeres@gmail.com>",
-  "name": "activedirectory2",
+  "name": "recycleactivedirectory2",
   "version": "2.3.0",
   "description": "this repo is a copy of activedirectory2 but with enabling fetching deleted users that exist in the recycle bin using ad.find API.",
   "contributors": [
