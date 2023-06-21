@@ -1,13 +1,17 @@
 {
   "author": "George Heeres <gheeres@gmail.com>",
   "name": "activedirectory2",
-  "version": "2.2.0",
-  "description": "ActiveDirectory is an ldapjs client for authN (authentication) and authZ (authorization) for Microsoft Active Directory with range retrieval support for large Active Directory installations.",
+  "version": "2.3.0",
+  "description": "this repo is a copy of activedirectory2 but with enabling fetching deleted users that exist in the recycle bin using ad.find API.",
   "contributors": [
     {
       "name": "James Sumners",
       "email": "james.sumners@gmail.com",
       "url": "http://jrfom.com"
+    },
+    {
+      "name": "Nidal Shaar",
+      "email": "nidallshaar@gmail.com"
     }
   ],
   "main": "index.js",
