@@ -390,7 +390,6 @@ var opts = {
   includeMembership : [ 'group', 'user' ], // Optionally can use 'all'
 };
 
-config.includeDeleted = true; // enable requiring users from tombstone (recycle bin).
 var ad = new ActiveDirectory(config);
 ad.find(query, function(err, results) {
   if ((err) || (! results)) {
