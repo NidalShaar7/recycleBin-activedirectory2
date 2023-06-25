@@ -8,10 +8,6 @@
       "name": "James Sumners",
       "email": "james.sumners@gmail.com",
       "url": "http://jrfom.com"
-    },
-    {
-      "name": "Nidal Shaar",
-      "email": "nidallshaar@gmail.com"
     }
   ],
   "main": "index.js",
